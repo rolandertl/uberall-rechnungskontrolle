@@ -371,8 +371,8 @@ def display_results(results: Dict):
                 # Add uberall dashboard link
                 location_id = entry['location_id']
                 if location_id and location_id != 'N/A':
-                    # Generic uberall dashboard URL structure (may need adjustment)
-                    dashboard_url = f"https://app.uberall.com/locations/{location_id}"
+                    # Edelweiss Digital uberall dashboard URL
+                    dashboard_url = f"https://listings.edelweissdigital.at/de/app/edelweissdigital/locationEdit/{location_id}/basic-data"
                     row['uberall Link'] = f"[Dashboard]({dashboard_url})"
                 else:
                     row['uberall Link'] = 'N/A'
