@@ -371,9 +371,9 @@ def display_results(results: Dict):
                 # Add uberall dashboard link
                 location_id = entry['location_id']
                 if location_id and location_id != 'N/A':
-                    # Edelweiss Digital uberall dashboard URL
+                    # Edelweiss Digital uberall dashboard URL - direct URL is clickable in Streamlit
                     dashboard_url = f"https://listings.edelweissdigital.at/de/app/edelweissdigital/locationEdit/{location_id}/basic-data"
-                    row['uberall Link'] = f"[Dashboard]({dashboard_url})"
+                    row['uberall Link'] = dashboard_url
                 else:
                     row['uberall Link'] = 'N/A'
                 
@@ -466,7 +466,7 @@ def main():
         
         # Version info
         st.markdown("---")
-        st.markdown("🔄 **Version:** v1.0")
+        st.markdown("🔄 **Version:** v3.0")
         st.markdown("*Erstellt: 27.07.2025*")
     
     # Main processing
